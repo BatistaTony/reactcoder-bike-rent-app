@@ -28,6 +28,7 @@ export const NavbarLogo = styled.h1`
   font-weight: 700;
   font-size: 35px;
   line-height: 43px;
+  cursor: pointer;
   /* identical to box height */
 
   color: #e6474b;
