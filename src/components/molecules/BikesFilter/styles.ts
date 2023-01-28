@@ -4,7 +4,7 @@ export const BikeFilterContainer = styled.div`
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 25% 20% 20% auto;
+  grid-template-columns: 25% 20% 20%;
   align-items: center;
   justify-content: center;
   grid-column-gap: 20px;

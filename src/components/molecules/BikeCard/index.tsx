@@ -10,6 +10,7 @@ import {
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Bike } from "../../../typescript/bikes";
 import BikeImageCarousel from "./bike-card-image-carousel";
+import { useRouter } from "next/router";
 
 interface BikeCardProps {
   bike: Bike;
@@ -17,6 +18,8 @@ interface BikeCardProps {
 
 const BikeCard = ({ bike }: BikeCardProps) => {
   const { cover, engine, features, id, images, name, price } = bike;
+
+  const router = useRouter();
 
   return (
     <BikeCardContainer>
@@ -33,7 +36,7 @@ const BikeCard = ({ bike }: BikeCardProps) => {
         ))}
       </BikeCardDescription>
 
-      <BikeCardButton>
+      <BikeCardButton onClick={() => router.push(`/bike/${id}`)}>
         <AiOutlineArrowRight fontSize={35} color="#E6474B" />
       </BikeCardButton>
     </BikeCardContainer>

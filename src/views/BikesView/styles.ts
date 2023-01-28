@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
-import { NewBikesList } from "./../../components/molecules/NewBikes/styles";
+import { NewBikesList } from "../../components/molecules/NewBikes/styles";
 
 export const BikesViewContainer = styled.div`
   width: 100%;
+  min-height: 100vh;
   height: auto;
   display: flex;
   align-self: start;

@@ -4,6 +4,7 @@ import {
   BikeFilterButton,
 } from "./styles";
 import { BiSearchAlt2 } from "react-icons/bi";
+import { GiPriceTag, GiDutchBike } from "react-icons/gi";
 import {
   FormControl,
   InputLabel,
@@ -49,7 +50,7 @@ const BikeFilter = ({
       </FieldContainer>
       <FieldContainer>
         <div className="field-icon">
-          <BiSearchAlt2 />
+          <GiPriceTag />
         </div>
         <TextField
           placeholder="preço por hora"
@@ -61,7 +62,7 @@ const BikeFilter = ({
       </FieldContainer>
       <FieldContainer>
         <div className="field-icon">
-          <BiSearchAlt2 />
+          <GiDutchBike />
         </div>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">Motor</InputLabel>
@@ -74,7 +75,7 @@ const BikeFilter = ({
             onChange={handleChange}
           >
             {BIKES_ENGINE.map((item) => (
-              <MenuItem value={item} key={item}>
+              <MenuItem value={item === "todos" ? "" : item} key={item}>
                 {item}
               </MenuItem>
             ))}
@@ -82,7 +83,7 @@ const BikeFilter = ({
         </FormControl>
       </FieldContainer>
 
-      <BikeFilterButton onClick={handleSearch}>Pesquisar</BikeFilterButton>
+      {/* <BikeFilterButton onClick={handleSearch}>Pesquisar</BikeFilterButton> */}
     </BikeFilterContainer>
   );
 };

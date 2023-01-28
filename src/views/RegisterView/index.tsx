@@ -8,7 +8,7 @@ import {
   FormQuestion,
   FormQuestionAction,
   FormErrorMsg,
-} from "./../LoginView/styles";
+} from "../LoginView/styles";
 import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { User, UserLoginType } from "../../typescript/user";

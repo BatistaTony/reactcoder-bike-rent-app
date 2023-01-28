@@ -26,11 +26,11 @@ const Pagination = ({
       <PaginationList>
         {pages.map((item) => (
           <PaginationListItem
-            onClick={() => handleActivePage(item)}
-            active={page === item}
-            key={item}
+            onClick={() => handleActivePage(item + 1)}
+            active={page === item + 1}
+            key={item + 1}
           >
-            {item}
+            {item + 1}
           </PaginationListItem>
         ))}
       </PaginationList>

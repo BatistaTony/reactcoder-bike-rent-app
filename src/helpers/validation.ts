@@ -1,3 +1,4 @@
+import { CardInfo } from "../typescript/rent";
 import { User, UserLoginType } from "../typescript/user";
 
 export const validateRegisterForm = (data: User) => {
@@ -11,6 +12,16 @@ export const validateRegisterForm = (data: User) => {
 };
 
 export const validateLoginForm = (data: UserLoginType) => {
+  const values = Object.entries(data);
+
+  for (const prop of values) {
+    if (prop[1] === "") {
+      return prop[0];
+    }
+  }
+};
+
+export const validatePaymentForm = (data: CardInfo) => {
   const values = Object.entries(data);
 
   for (const prop of values) {

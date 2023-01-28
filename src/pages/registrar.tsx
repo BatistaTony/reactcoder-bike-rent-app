@@ -1,4 +1,4 @@
-import PageViewRegistrar from "../views/PageViewRegistrar";
+import PageViewRegistrar from "../views/RegisterView";
 
 const PageRegistrar = () => {
   return <PageViewRegistrar />;

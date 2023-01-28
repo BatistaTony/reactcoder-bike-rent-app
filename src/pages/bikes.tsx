@@ -1,4 +1,4 @@
-import BikesPageView from "../views/BikesPageView";
+import BikesPageView from "../views/BikesView";
 
 const BikesPage = () => {
   return <BikesPageView />;

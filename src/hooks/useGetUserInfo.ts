@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getAuthFromLocalStorage } from "../helpers/local-storage";
 import { User } from "../typescript/user";
